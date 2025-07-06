@@ -1,0 +1,26 @@
+/*Configuração da Área principal da página (carrossel e seção de itens)*/
+
+/*Carrossel principal*/
+.carousel{
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/*Slide individual*/
+.container{
+    display: flex;
+    flex: 0 0 100vw;
+    padding: 0 2%;
+    justify-content: center;
+}
+
+/*Conteúdo dentro do slide*/
+.box-container{
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
