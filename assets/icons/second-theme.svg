@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 1000">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke-linecap: round;
+      }
+
+      .st0, .st1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 30px;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+
+      .st3 {
+        display: none;
+      }
+    </style>
+  </defs>
+  <g id="Camada_2" class="st3">
+    <rect width="1000" height="1000"/>
+  </g>
+  <g id="Camada_1" class="st3">
+    <g>
+      <polygon class="st1" points="869.12 290.01 866.39 714.69 499.38 923.45 497.29 924.65 130.88 709.95 133.61 286.92 133.61 285.31 502.75 75.35 866.39 288.41 867.11 288.85 869.12 290.01"/>
+      <polygon class="st1" points="869.12 290.01 866.39 714.69 499.38 923.45 497.29 922.24 500.02 499.26 500.02 497.61 866.39 289.25 867.11 288.85 869.12 290.01"/>
+      <polygon class="st1" points="866.39 288.41 866.39 290.01 497.29 499.98 133.61 286.92 133.61 285.31 502.75 75.35 866.39 288.41"/>
+      <line class="st1" x1="669.2" y1="166.99" x2="325.38" y2="393.39"/>
+      <line class="st0" x1="651.24" y1="504.63" x2="753.04" y2="447.69"/>
+    </g>
+  </g>
+  <g id="Camada_3">
+    <g>
+      <path class="st2" d="M499.99,320.58c-99.08,0-179.42,80.34-179.42,179.42s80.34,179.42,179.42,179.42,179.42-80.34,179.42-179.42-80.31-179.42-179.42-179.42ZM499.99,656.95c-86.66,0-156.96-70.26-156.96-156.96s70.3-156.96,156.96-156.96v313.91Z"/>
+      <g>
+        <g id="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="467.2" y="736.55" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(1001.28 1646.82) rotate(179.95)"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_1" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="238.28" y="641.96" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(-51.66 1436.71) rotate(-135.05)"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_2" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="143.29" y="413.2" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(-323.76 677.09) rotate(-90.05)"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_3" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="237.88" y="184.28" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(-112.52 271.41) rotate(-45.05)"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_4" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="466.64" y="89.29" width="66.15" height="174.16" rx="33.08" ry="33.08"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_5" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="695.57" y="183.88" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(404.4 -435.58) rotate(44.95)"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_6" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="790.55" y="412.64" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(1322.63 -324.35) rotate(89.95)"/>
+        </g>
+        <g id="_x3C_Repetição_radial_x3E_7" data-name="_x3C_Repetição_radial_x3E_">
+          <rect class="st2" x="695.96" y="641.56" width="66.15" height="174.16" rx="33.08" ry="33.08" transform="translate(1759.78 727.46) rotate(134.95)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
