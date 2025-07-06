@@ -1,11 +1,17 @@
 /*Configuração da Área principal da página (carrossel e seção de itens)*/
 
-/*Carrossel principal*/
-.carousel{
+/*Caixa fixa que contém o carrossel*/
+.carousel-wrapper{
     display: flex;
     width: 100vw;
     overflow: hidden;
     flex: 1;
+}
+
+/*Carrosel que se moverá conforme a escolha do usuário*/
+.carousel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 /*Slide individual*/
@@ -14,6 +20,7 @@
     flex: 0 0 100vw;
     padding: 0 2%;
     justify-content: center;
+    background-color: bisque;
 }
 
 /*Conteúdo dentro do slide*/
@@ -22,6 +29,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: brown;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
