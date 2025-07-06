@@ -4,4 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     initCarousel(); // Inicializa o carrossel
     toggleTheme(); // Inicializa a funcionalidade de troca de tema
+    initMobileMenu(); // Inicializa o menu para mobile
 });
+
+/*-------------------------------------------------------------------------------------------------*/

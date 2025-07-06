@@ -20,7 +20,6 @@
     flex: 0 0 100vw;
     padding: 0 2%;
     justify-content: center;
-    background-color: bisque;
 }
 
 /*Conteúdo dentro do slide*/
@@ -29,7 +28,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: brown;
 }
 
 /*-------------------------------------------------------------------------------------------------*/

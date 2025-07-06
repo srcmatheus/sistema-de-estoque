@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/body/header.css">
     <link rel="stylesheet" href="assets/css/body/main/main.css">
     <link rel="stylesheet" href="assets/css/body/footer.css">
+    <link rel="stylesheet" href="assets/css/body/main/mobile-menu.css">
 </head>
 <body>
     
@@ -23,7 +24,7 @@
             </div>
 
             <!--Barra de navegação-->
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="nav-bar">
                 <ul class="nav-list">
                     <li><button class="nav-button">Cadastrar</button></li>
                     <li><button class="nav-button">Estoque</button></li>
@@ -31,6 +32,13 @@
                     <li><button class="toggle-theme" id="toggle-theme"><img src="assets/icons/first-theme.svg" alt="Alterar tema"></button></li>
                 </ul>
             </nav>
+
+            <!--Menu mobile-->
+            <button class="mobile-menu" id="mobile-menu">
+                <span class="line line-one"></span>
+                <span class="line line-two"></span>
+                <span class="line line-three"></span>
+            </button>
 
         </div>
     </header>
@@ -68,6 +76,7 @@
     </footer>
 
     <!--Arquivos JavaScript-->
+    <script src="assets/js/mobile-menu.js"></script>
     <script src="assets/js/toggleTheme.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/main.js"></script>
