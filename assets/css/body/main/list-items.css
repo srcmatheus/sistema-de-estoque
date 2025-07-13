@@ -1,0 +1,123 @@
+/*Estilização e configuração da lista de itens*/
+.list-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.list-title > h1{
+    font-size: 1.8rem;
+}
+
+/*Barra de pesquisa de itens*/
+.search-input{
+    width: 30%;
+    height: 35px;
+    min-width: 200px;
+    border-radius: 20px;
+    padding: 0 20px;
+    color: white;
+    background-image: url('../../../icons/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-size: 30px;
+}
+
+.search-input::placeholder{
+    color: white;
+}
+
+@media (max-width: 490px) {
+    .search-input {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/*Barra de informações dos itens*/
+.info-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.info{
+    flex: 20%;
+    font-weight: 300;
+}
+
+/*Display de itens cadastrados*/
+.display-items{
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.display-items > ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.display-items > ul > li{
+    flex: 20%;
+    height: 70px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.display-items > ul > li > p{
+    font-weight: 300;
+}
+
+.edit-button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-image: url('../../../icons/edit-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgb(59, 180, 59);
+    border: 1px solid rgb(59, 180, 59);
+    margin-right: 10px;
+}
+
+.delete-button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-image: url('../../../icons/trash-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgb(180, 59, 59);
+    border: 1px solid rgb(180, 59, 59);
+}
+
+.edit-button:active, .delete-button:active {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@media (max-width: 420px) {
+    .set-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .edit-button, .delete-button {
+        padding: 13px;
+        
+    }
+}
+/*-------------------------------------------------------------------------------------------------*/

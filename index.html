@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/body/footer.css">
     <link rel="stylesheet" href="assets/css/body/main/mobile-menu.css">
     <link rel="stylesheet" href="assets/css/body/main/registration-form.css">
+    <link rel="stylesheet" href="assets/css/body/main/list-items.css">
 </head>
 <body>
     
@@ -52,6 +53,7 @@
             <section class="container" data-index="0">
                 <div class="box-container">
                     
+                    <!--Titulo da seção-->
                     <div class="form-title"><h1>Cadastro de produtos</h1><div class="div-line"></div></div>
                     <!--Formulário de cadastro de itens-->
                     <form class="registration-form">
@@ -90,7 +92,30 @@
             <!--Seção de lista de itens-->
             <section class="container" data-index="1">
                 <div class="box-container">
-                    <h1>lista</h1>
+                    <!--Titulo da seção-->
+                    <div class="list-title">
+                        <h1>Lista de produtos</h1>
+                        <input type="text" class="search-input" placeholder="Pesquisar...">
+                        <!--Barra de informações-->
+                        <div class="info-bar">
+                            <p class="info">Nome</p>
+                            <p class="info">Código</p>
+                            <p class="info">Classe</p>
+                            <p class="info">Quantia</p>
+                            <p class="info">Ação</p>
+                        </div>
+                        <div class="div-line"></div>
+                    </div>
+                    <!--Display de itens cadastrados-->
+                    <div class="display-items">
+                        <ul>
+                            <li><p>Produto</p></li>
+                            <li><p>001</p></li>
+                            <li><p>A</p></li>
+                            <li><p>20</p></li>
+                            <li class="set-buttons"><button class="edit-button"></button><button class="delete-button"></button></li>
+                        </ul>
+                     </div>   
                 </div>
             </section>
 

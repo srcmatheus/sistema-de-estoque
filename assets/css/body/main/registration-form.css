@@ -87,7 +87,7 @@ select:hover{
     transform: scale(1.05);
 }
 
-/*Estilização do botão*/
+/*Estilização do botão do formulario*/
 .button-form{
     width: 100%;
     display: flex;

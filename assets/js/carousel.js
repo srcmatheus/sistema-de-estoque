@@ -42,7 +42,7 @@ function initCarousel(){
         }
     });
 
-    showSlide(0); // Exibe o primeiro slide ao carregar a página)
+    showSlide(1); // Exibe o primeiro slide ao carregar a página)
 };
 
 /*-------------------------------------------------------------------------------------------------*/
