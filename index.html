@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/body/main/mobile-menu.css">
     <link rel="stylesheet" href="assets/css/body/main/registration-form.css">
     <link rel="stylesheet" href="assets/css/body/main/list-items.css">
+    <link rel="stylesheet" href="assets/css/body/main/items-statistics.css">
 </head>
 <body>
     
@@ -122,13 +123,66 @@
             <!--Seção de estatísticas de itens-->
             <section class="container" data-index="2">
                 <div class="box-container">
-                    <h1>statts</h1>
+
+                    <!--Titulo da seção-->
+                    <div class="form-title"><h1>Estatísticas de produtos</h1><div class="div-line"></div></div>
+                  
+                    <!--Estatísticas dos itens regisrados-->
+                    <div class="statistics">
+
+                        <!--Gráfico pizza-->
+                        <div class="chart-area">
+                            <div class="chart-container"><canvas class="chart"></canvas></div>
+                            <div class="chart-list">
+                                <p><span>𒊹</span>Porcentagem de A: 50%</p>
+                                <p><span>𒊹</span>Porcentagem de B: 30%</p>
+                                <p><span>𒊹</span>Porcentagem de C: 20%</p>
+                            </div>
+                        </div>
+
+                        <!--Blocos de estatísticas dos itens cadastrados-->
+                        <div class="info-items">
+                            
+                            <div class="info-section">
+                                <div class="info-box">
+                                    <h2>Quantidade de produtos de classe A</h2>
+                                    <p class="info-number">50 un.</p>
+                                </div>
+                                <div class="info-box">
+                                    <h2>Quantidade de produtos de classe B</h2>
+                                    <p class="info-number">30 un.</p>
+                                </div>
+                                <div class="info-box">
+                                    <h2>Quantidade de produtos de classe C</h2>
+                                    <p class="info-number">20 un.</p>
+                                </div>
+                            </div>
+
+                            <div class="info-section">
+                                <div class="info-box">
+                                    <h2>Total de produtos de classe A</h2>
+                                    <p class="info-number">R$50</p>
+                                </div>
+                                <div class="info-box">
+                                    <h2>Total de produtos de classe B</h2>
+                                    <p class="info-number">R$30</p>
+                                </div>
+                                <div class="info-box">
+                                    <h2>Total de produtos de classe C</h2>
+                                    <p class="info-number">R$20</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </div>
 
     </main>
 
+    <!--Rodapé-->
     <footer class="footer">
         <p>Desenvolvido por Matheus Nascimento</p>
     </footer>

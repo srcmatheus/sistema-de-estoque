@@ -1,0 +1,85 @@
+/*Estilização da seção de estatísticas de itens*/
+.statistics{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*Seção de gráfico*/
+.chart-area{
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Seção de informações de itens*/
+.info-items{
+    flex:  50%;
+    gap: 20px;
+}
+
+/*Gráfico*/
+.chart{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.chart-list{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*informações dos itens*/
+.info-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-section{
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-box{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.info-box > h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.info-box > p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.info-box:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 780px) {
+    .chart-area, .chart-info{
+        flex: 100%;
+    }
+
+    .info-items{
+        margin-top: 20px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------*/

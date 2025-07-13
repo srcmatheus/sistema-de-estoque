@@ -75,7 +75,13 @@
     overflow: auto;
 }
 
+.info{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 .display-items > ul > li > p{
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
@@ -87,8 +93,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-    background-color: rgb(59, 180, 59);
-    border: 1px solid rgb(59, 180, 59);
+    background-color: rgb(57, 192, 57);
+    border: 1px solid rgb(57, 192, 57);
     margin-right: 10px;
 }
 
@@ -100,8 +106,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-    background-color: rgb(180, 59, 59);
-    border: 1px solid rgb(180, 59, 59);
+    background-color: rgb(211, 67, 67);
+    border: 1px solid rgb(211, 67, 67);
 }
 
 .edit-button:active, .delete-button:active {
