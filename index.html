@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/body/main/main.css">
     <link rel="stylesheet" href="assets/css/body/footer.css">
     <link rel="stylesheet" href="assets/css/body/main/mobile-menu.css">
+    <link rel="stylesheet" href="assets/css/body/main/registration-form.css">
 </head>
 <body>
     
@@ -43,14 +44,46 @@
         </div>
     </header>
 
-    <!--Contepudo principal (carrossel de seções)-->
+    <!--Conteudo principal (carrossel de seções)-->
     <main class="carousel-wrapper">
 
         <div class="carousel" id="carousel">
             <!--Seção de registro de itens-->
             <section class="container" data-index="0">
                 <div class="box-container">
-                    <h1>cadastro</h1>
+                    
+                    <div class="form-title"><h1>Cadastro de produtos</h1><div class="div-line"></div></div>
+                    <!--Formulário de cadastro de itens-->
+                    <form class="registration-form">
+
+                        <div class="width-100">
+                            <label for="product-name">Nome do produto</label><input type="text" id="product-name" required autocomplete="on">
+                        </div>
+                        <div class="width-50">
+                            <label for="codigo-produto">Código do produto</label><input type="number" min="1" name="codigo-produto" id="codigo-produto" required>
+                        </div>
+                        <div class="width-50">
+                        <label for="classificacao-produto">Classificação</label><select name="classificacao-produto" id="classificacao-produto" required>
+                            <option value="" disabled selected>Selecione uma categoria</option>
+                            <option value="A">Classificação A</option>
+                            <option value="B">Classificação B</option>
+                            <option value="C">Classificação C</option>
+                        </select>
+                    </div>
+                    <div class="width-50">
+                        <label for="quantidade-produto">Quantidade</label><input type="number" name="quantidade-produto" id="quantidade-produto" min="1" required>
+                    </div>
+
+                    <div class="width-50">
+                        <label for="preco-produto">Preço</label><input type="number" name="preco-produto" id="preco-produto" min="1" required>
+                    </div>
+
+                    <div class="button-form">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+
+                    </form>
+
                 </div>
             </section>
 

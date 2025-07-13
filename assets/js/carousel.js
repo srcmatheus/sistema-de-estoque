@@ -31,9 +31,9 @@ function initCarousel(){
         });
     });
 
-    /*Adicionando o evento de trclado para permitir a navegação utilizando as setas do teclado
+    /*Adicionando o evento de teclado para permitir a navegação utilizando as setas do teclado
     Quando a tecla 'ArrowRight' for pressionada e o indice  atual for menor que o indice do último botão, chama a função que avançará o slide
-    O mesmo ocorre com 'ArrowLeft', porém verificando se o indeice atual é maior que 0, se for, o slide retrocederá*/
+    O mesmo ocorre com 'ArrowLeft', porém verificando se o indice atual é maior que 0, se for, o slide retrocederá*/
     document.addEventListener('keydown', (e) => {
         if(e.key === 'ArrowRight' && currentIndex < navButtons.length - 1){
             showSlide(currentIndex + 1)
