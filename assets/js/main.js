@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     initCarousel(); // Inicializa o carrossel
     toggleTheme(); // Inicializa a funcionalidade de troca de tema
     initMobileMenu(); // Inicializa o menu para mobile
+    displayCurrentDate(); // Exibe a data e hora atual
+    setInterval(displayCurrentDate, 1000); // Atualiza a data e hora a cada segundo
+    registerItem(); // Inicializa o registro de itens
 });
 
 /*-------------------------------------------------------------------------------------------------*/

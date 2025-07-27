@@ -55,18 +55,18 @@
                 <div class="box-container">
                     
                     <!--Titulo da seção-->
-                    <div class="form-title"><h1>Cadastro de produtos</h1><div class="div-line"></div></div>
+                    <div class="form-title"><h1>Cadastro de produtos</h1><p id="current-date">Data e Hora</p><div class="div-line"></div></div>
                     <!--Formulário de cadastro de itens-->
-                    <form class="registration-form">
+                    <form class="registration-form" id="registration-form">
 
                         <div class="width-100">
-                            <label for="product-name">Nome do produto</label><input type="text" id="product-name" required autocomplete="on">
+                            <label for="product-name">Nome do produto</label><input type="text" id="product-name" required autocomplete="off">
                         </div>
                         <div class="width-50">
-                            <label for="codigo-produto">Código do produto</label><input type="number" min="1" name="codigo-produto" id="codigo-produto" required>
+                            <label for="product-code">Código do produto</label><input type="number" min="1" name="product-code" id="product-code" required>
                         </div>
                         <div class="width-50">
-                        <label for="classificacao-produto">Classificação</label><select name="classificacao-produto" id="classificacao-produto" required>
+                        <label for="product-classification">Classificação</label><select name="product-classification" id="product-classification" required>
                             <option value="" disabled selected>Selecione uma categoria</option>
                             <option value="A">Classificação A</option>
                             <option value="B">Classificação B</option>
@@ -74,11 +74,11 @@
                         </select>
                     </div>
                     <div class="width-50">
-                        <label for="quantidade-produto">Quantidade</label><input type="number" name="quantidade-produto" id="quantidade-produto" min="1" required>
+                        <label for="product-quantity">Quantidade</label><input type="number" name="product-quantity" id="product-quantity" min="1" required>
                     </div>
 
                     <div class="width-50">
-                        <label for="preco-produto">Preço</label><input type="number" name="preco-produto" id="preco-produto" min="1" required>
+                        <label for="product-price">Preço</label><input type="number" name="product-price" id="product-price" min="1" required>
                     </div>
 
                     <div class="button-form">
@@ -143,6 +143,7 @@
                         <!--Blocos de estatísticas dos itens cadastrados-->
                         <div class="info-items">
                             
+                            <!--Gráfico e porcentagens-->
                             <div class="info-section">
                                 <div class="info-box">
                                     <h2>Quantidade de produtos de classe A</h2>
@@ -158,6 +159,7 @@
                                 </div>
                             </div>
 
+                            <!--Estatísticas de produtos por classe-->
                             <div class="info-section">
                                 <div class="info-box">
                                     <h2>Total de produtos de classe A</h2>
@@ -188,6 +190,9 @@
     </footer>
 
     <!--Arquivos JavaScript-->
+    <script src="assets/js/item-validation.js"></script>
+    <script src="assets/js/item-registration.js"></script>
+    <script src="assets/js/current-date.js"></script>
     <script src="assets/js/mobile-menu.js"></script>
     <script src="assets/js/toggleTheme.js"></script>
     <script src="assets/js/carousel.js"></script>
