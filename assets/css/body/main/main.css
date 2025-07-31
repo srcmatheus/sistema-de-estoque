@@ -3,7 +3,7 @@
 /*Caixa fixa que contém o carrossel*/
 .carousel-wrapper{
     display: flex;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     flex: 1;
 }

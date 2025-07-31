@@ -1,0 +1,95 @@
+/*Configuração e estilização da janela modal*/
+
+/*fundo do modal*/
+.modal-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    visibility: hidden;
+}
+
+/*modal*/
+.modal-box{
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 9999;
+    margin: 0 5%;
+    text-align: center;
+    color: var(--bg-color-primary);
+    transform: scale(0.1);
+    transition: transform 0.3s ease;
+}
+
+/*Classe que aumenta o tamanho do modal*/
+.large{
+    max-width: 800px;
+}
+
+/*Adicionando visibilidade ao modal*/
+.modal-content.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Configuração para a animação do modal*/
+.modal-content.show .modal-box{
+    transform: scale(1);
+}
+
+/*Titulo do modal*/
+.modal-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+/*Conteudo do modal*/
+.modal-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+/*Botões do modal*/
+.modal-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+/*Estilização dos botões*/
+.modalButton{
+    max-width: 200px;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #44d644dc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.modalButton:active{
+    background-color: #fff;
+    color: #44d644dc;
+    border: 1px solid #44d644dc;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
