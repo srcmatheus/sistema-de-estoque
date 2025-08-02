@@ -10,6 +10,9 @@
 :root{
     --bg-color-primary: #10b7ff;
     --bg-color-second: #004f93;
+    --bg-color-green: #39c039;
+    --bg-color-red: #d34343;
+    --duration: 3s;
 }
 /*Dark mode*/
 :root.dark{

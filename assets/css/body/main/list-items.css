@@ -93,8 +93,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-    background-color: rgb(57, 192, 57);
-    border: 1px solid rgb(57, 192, 57);
+    background-color: var(--bg-color-green);
+    border: 1px solid var(--bg-color-green);
     margin-right: 10px;
 }
 
@@ -106,8 +106,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-    background-color: rgb(211, 67, 67);
-    border: 1px solid rgb(211, 67, 67);
+    background-color: var(--bg-color-red);
+    border: 1px solid var(--bg-color-red);
 }
 
 .edit-button:active, .delete-button:active {

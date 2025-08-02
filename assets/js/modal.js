@@ -66,10 +66,25 @@ class Modal {
             const buttonsArray = Array.isArray(buttons) ? buttons : [buttons];
 
             //Para cada botão no array, cria um elemento button e adiciona ao modal
-            buttonsArray.forEach((btnText) => {
+            buttonsArray.forEach((btnConfig) => {
                 const button = document.createElement("button");
                 button.classList.add("modalButton");
-                button.textContent = btnText;
+
+                if(btnConfig.color == "green") button.classList.add("green");
+                if(btnConfig.color == "red") button.classList.add("red");
+
+                if(typeof btnConfig === "string") { //Se for uma string, define apenas o texto do botão
+                    button.textContent = btnConfig;
+                }else{  //Se for um objeto, define o texto do botão e a função callback associada a ele
+                    button.textContent = btnConfig.text || "Botão"; 
+                    if(typeof btnConfig.callback === "function") { //Se a função callback existir, adiciona um evento de clique ao botão
+                        button.addEventListener('click', (e) =>{
+                            e.stopPropagation(); //Evita que o evento de click feche o modal
+                            btnConfig.callback(); //Chama a função de callback se existir
+                        });
+                }
+            
+                }
                 modalButtons.appendChild(button);
                 modalBox.appendChild(modalButtons);
             });
@@ -95,6 +110,48 @@ class Modal {
         });
     }
 
+}
+
+/*Função para animar entrada, saída e conteudo da caixa de notificação*/
+
+function showNotificationBox(message = "Mensagem padrão", duration = 2000, color = "green"){ // Definindo valores padrão para os parâmetros
+
+    /*Alterando o tempo de exibição da caixa de notifição*/
+    document.documentElement.style.setProperty('--duration', `${duration/1000}s`); //O valor deve ser em segundos
+    
+    /*Selecionado o container que será criado*/
+    let container = document.querySelector('.notification-container');
+
+    /*Verifica se o container existe para criar um novo*/
+    if (!container) {
+        container = document.createElement('div');
+        container.classList.add('notification-container');
+        document.body.appendChild(container);
+    }
+
+    /*Elemento que receberá o conteúdo*/
+    const notificationBox = document.createElement('div');
+    notificationBox.classList.add('notification-box');
+    
+    /*Conteudo da caixa de notificação*/
+    const p = document.createElement('p');
+    p.textContent = message;
+
+    /*Adicionando o conteudo a caixa de notificação*/
+    notificationBox.appendChild(p);
+    container.appendChild(notificationBox);
+
+    /*Definindo a cor de fundo da caixa de notificação com base no parâmetro color*/
+    if (color == "green") notificationBox.style.backgroundColor = "var(--bg-color-green)";
+    if (color == "red") notificationBox.style.backgroundColor = "var(--bg-color-red)";
+
+    //Temporizador para remover a notificação após o tempo definido
+    setTimeout(() => {
+        container.classList.add('hide');
+        setTimeout(() => {
+            container.remove(); //remove
+        }, 300);
+    }, duration);
 }
 
 /*-------------------------------------------------------------------------------------------------*/
