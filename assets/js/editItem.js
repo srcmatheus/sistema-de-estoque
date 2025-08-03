@@ -79,7 +79,6 @@ function deleteItem(index){
                 callback: () => {
                     listItems.splice(index, 1);
                     displayItems(listItems);
-                    displayItems(listItems);
                     modal.closeThis();
                     showNotificationBox('Item excluído com sucesso.', 3000, 'red');
                 }

@@ -1,25 +1,32 @@
 /*Função de renderização de itens*/
 
-function displayItems(listItems){
+function displayItems(list){
 
     let totalItems = 0; //Quantidade total de itens cadastrados
     let totalValue = 0; //Valor total da soma de todos os itens
     const displayItems = document.getElementById('display-items');
     const totItem = document.getElementById('totItems');
     const totValue = document.getElementById('totValue');
+
+    displayItems.querySelectorAll('ul').forEach(ul => ul.remove()); //Limpando o container a cada renderização
+    displayItems.querySelectorAll('p').forEach(p => p.remove());
     
     //Verificando se não existe nenhum item cadastrado para exibir a mensagem
-    if(!displayItems.children.length){
+    if(list.length == 0){
         const p = document.createElement('p');
-        p.textContent = 'Itens cadastrados aparecerão aqui. No momento não há itens cadastrados.';
+        
+        if(list === listItems){
+            p.textContent = 'Itens cadastrados aparecerão aqui. No momento não há itens cadastrados.';
+        }else{
+            p.textContent = 'Nenhum item encontrado.';
+        }
+
         p.classList.add('noItemsText');
         displayItems.appendChild(p);
-    }else{
-        displayItems.innerHTML = ''; //Limpando o container a cada renderização
     }
 
     /*Renzderizando itens 1 por 1 na lista*/
-    listItems.forEach((prod, index) => {
+    list.forEach((prod, index) => {
         totalItems += prod.productQuantity;
         totalValue += prod.productPrice * prod.productQuantity;
         const ul = document.createElement('ul');
@@ -56,13 +63,21 @@ function displayItems(listItems){
 
 /*Função da barra de pesquisa de itens cadastrados*/
 
-document.getElementById('search-input').addEventListener('input', function() { //Adicionando evento de input ao elemento
+    const searchBar = document.getElementById('search-input');
+
+    searchBar.addEventListener('input', function() { //Adicionando evento de input ao elemento
     const term = this.value.toLowerCase(); //Armazenando o termo digitado no input
 
-    const filter = listItems.filter(product => { //Filtrando os dados do array
+    const listItemsCopy = [...listItems];
+
+    const filter = listItemsCopy.filter(product => { //Filtrando os dados do array
         return product.productName.toLowerCase().includes(term) || product.productCode.toString().includes(term); //Retorna o(s) que correspondem ao termo
-     });
+    });
+
     displayItems(filter); //Exibindo os itens filtrados
+
+     if(searchBar.value === '') displayItems(listItems);
+
 });
 
 /*-------------------------------------------------------------------------------------------------*/
