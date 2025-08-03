@@ -54,4 +54,15 @@ function displayItems(listItems){
 
 }
 
+/*Função da barra de pesquisa de itens cadastrados*/
+
+document.getElementById('search-input').addEventListener('input', function() { //Adicionando evento de input ao elemento
+    const term = this.value.toLowerCase(); //Armazenando o termo digitado no input
+
+    const filter = listItems.filter(product => { //Filtrando os dados do array
+        return product.productName.toLowerCase().includes(term) || product.productCode.toString().includes(term); //Retorna o(s) que correspondem ao termo
+     });
+    displayItems(filter); //Exibindo os itens filtrados
+});
+
 /*-------------------------------------------------------------------------------------------------*/
