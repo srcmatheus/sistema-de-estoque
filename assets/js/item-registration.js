@@ -32,6 +32,8 @@ function registerItem() {
             this.reset(); // Limpa o formulário após o registro
         }
 
+        displayItems(listItems);
+
     })
 
 }

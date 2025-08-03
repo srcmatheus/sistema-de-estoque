@@ -79,7 +79,7 @@
                     </div>
 
                     <div class="width-50">
-                        <label for="product-price">Preço</label><input type="number" name="product-price" id="product-price" min="1" required>
+                        <label for="product-price">Preço</label><input type="number" name="product-price" id="product-price" min="1" step="0.01" required>
                     </div>
 
                     <div class="button-form">
@@ -109,15 +109,19 @@
                         <div class="div-line"></div>
                     </div>
                     <!--Display de itens cadastrados-->
-                    <div class="display-items">
-                        <ul>
+                    <div class="display-items" id="display-items">
+                        <!--<ul>
                             <li><p>Produto</p></li>
                             <li><p>001</p></li>
                             <li><p>A</p></li>
                             <li><p>20</p></li>
                             <li class="set-buttons"><button class="edit-button"></button><button class="delete-button"></button></li>
-                        </ul>
-                     </div>   
+                        </ul>-->
+                     </div>
+                     <div class="info-all">
+                        <p id="totItems">Quantidade total de items: 0 unidades</p>
+                        <p id="totValue">Valor total de todos os itens: R$ 0</p>
+                     </div>
                 </div>
             </section>
 
@@ -191,6 +195,8 @@
     </footer>
 
     <!--Arquivos JavaScript-->
+    <script src="assets/js/editItem.js"></script>
+    <script src="assets/js/display-items.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/item-validation.js"></script>
     <script src="assets/js/item-registration.js"></script>

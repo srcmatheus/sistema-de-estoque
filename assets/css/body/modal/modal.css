@@ -87,6 +87,7 @@
     font-size: 1.2em;
 }
 
+/*Botão vermelho do modal*/
 .modalButton.red{background-color: var(--bg-color-red);}
 
 .modalButton:active{
@@ -113,6 +114,7 @@
     top: -100px;
     transform: translate(50%, 0);
     animation: slideIn 0.5s forwards;
+    z-index: 99999;
 }
 
 /*Classe para animar a saida da caixa de notificação*/

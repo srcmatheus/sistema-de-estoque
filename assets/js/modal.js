@@ -19,6 +19,7 @@ class Modal {
         /*Fechar modal dinamicamente*/
         this.close();
 
+
     }
 
     /*Método que criará o modal*/
@@ -28,6 +29,7 @@ class Modal {
         //const {title, text, buttons} = this.options; ***forma "abreviada" de desestruturação chamada object destructuring***
         const title = this.options.title;
         const text = this.options.text;
+        const size = this.options.size;
         const buttons = this.options.buttons;
 
         /*Criação dos elemento principal*/
@@ -37,6 +39,7 @@ class Modal {
         /*Container interno do modal*/
         const modalBox = document.createElement("div");
         modalBox.classList.add("modal-box");
+        if(size == 'large') modalBox.classList.add('large');
         this.modal.appendChild(modalBox);
 
         /*Verificando se os argumentos existem, se sim, cria os elementos correspondentes*/
@@ -108,6 +111,10 @@ class Modal {
                 document.body.removeChild(this.modal);
             }
         });
+    }
+
+    closeThis(){
+        document.body.removeChild(this.modal);
     }
 
 }
