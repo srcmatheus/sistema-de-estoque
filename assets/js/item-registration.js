@@ -33,6 +33,7 @@ function registerItem() {
         }
 
         displayItems(listItems);
+        renderStatistics();
 
     })
 

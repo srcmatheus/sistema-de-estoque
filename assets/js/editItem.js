@@ -29,6 +29,11 @@ function editItem(index){ //Função para editar o item
             <div class="width-50">
                 <label for="product-price">Preço</label><input type="number" name="product-price" id="product-price1" min="1" step="0.01" required value="${productIndex.productPrice}">
             </div>
+
+            <div style="width: 100%; text-align: center;">
+                <p>Último registro: ${productIndex.registrationDate} | ${productIndex.registrationTime}</p>
+            </div>
+
         </form>
         `,
         size: 'large',
@@ -52,10 +57,13 @@ function editItem(index){ //Função para editar o item
                         productCode,
                         productClass,
                         productQuantity,
-                        productPrice
+                        productPrice,
+                        registrationDate: new Date().toLocaleDateString("pt-BR"),
+                        registrationTime: new Date().toLocaleTimeString("pt-BR")
                     };
 
                     displayItems(listItems);
+                    renderStatistics();
                     showNotificationBox('Item Salvo com sucesso!');
                 }
             }
@@ -79,6 +87,7 @@ function deleteItem(index){
                 callback: () => {
                     listItems.splice(index, 1);
                     displayItems(listItems);
+                    renderStatistics();
                     modal.closeThis();
                     showNotificationBox('Item excluído com sucesso.', 3000, 'red');
                 }

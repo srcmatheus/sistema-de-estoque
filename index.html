@@ -137,11 +137,11 @@
 
                         <!--Gráfico pizza-->
                         <div class="chart-area">
-                            <div class="chart-container"><canvas class="chart"></canvas></div>
+                            <div class="chart-container"><canvas class="chart" id="chart" width="220px" height="220px"></canvas></div>
                             <div class="chart-list">
-                                <p><span>𒊹</span>Porcentagem de A: 50%</p>
-                                <p><span>𒊹</span>Porcentagem de B: 30%</p>
-                                <p><span>𒊹</span>Porcentagem de C: 20%</p>
+                                <p><span style="color: #ff5252ff;">𒊹</span>Porcentagem de A: <span id="percentageA">0%</span></p>
+                                <p><span style="color: #4dff74ff;">𒊹</span>Porcentagem de B: <span id="percentageB">0%</span></p>
+                                <p><span style="color: #4abdffff">𒊹</span>Porcentagem de C: <span id="percentageC">0%</span></p>
                             </div>
                         </div>
 
@@ -150,33 +150,33 @@
                             
                             <!--Gráfico e porcentagens-->
                             <div class="info-section">
-                                <div class="info-box">
+                                <div class="info-box" style="border: 2px solid #ff5252ff;">
                                     <h2>Quantidade de produtos de classe A</h2>
-                                    <p class="info-number">50 un.</p>
+                                    <p class="info-number" id="amountA">0 un.</p>
                                 </div>
-                                <div class="info-box">
+                                <div class="info-box" style="border: 2px solid #4dff74ff;">
                                     <h2>Quantidade de produtos de classe B</h2>
-                                    <p class="info-number">30 un.</p>
+                                    <p class="info-number" id="amountB">0 un.</p>
                                 </div>
-                                <div class="info-box">
+                                <div class="info-box" style="border: 2px solid #4abdffff">
                                     <h2>Quantidade de produtos de classe C</h2>
-                                    <p class="info-number">20 un.</p>
+                                    <p class="info-number" id="amountC">0 un.</p>
                                 </div>
                             </div>
 
                             <!--Estatísticas de produtos por classe-->
                             <div class="info-section">
-                                <div class="info-box">
+                                <div class="info-box" style="border: 2px solid #ff5252ff;">
                                     <h2>Total de produtos de classe A</h2>
-                                    <p class="info-number">R$50</p>
+                                    <p class="info-number" id="valueA">R$0</p>
                                 </div>
-                                <div class="info-box">
+                                <div class="info-box" style="border: 2px solid #4dff74ff;">
                                     <h2>Total de produtos de classe B</h2>
-                                    <p class="info-number">R$30</p>
+                                    <p class="info-number" id="valueB">R$0</p>
                                 </div>
-                                <div class="info-box">
+                                <div class="info-box" style="border: 2px solid #4abdffff">
                                     <h2>Total de produtos de classe C</h2>
-                                    <p class="info-number">R$20</p>
+                                    <p class="info-number" id="valueC">R$0</p>
                                 </div>
                             </div>
 
@@ -195,6 +195,7 @@
     </footer>
 
     <!--Arquivos JavaScript-->
+    <script src="assets/js/item-statistics.js"></script>
     <script src="assets/js/editItem.js"></script>
     <script src="assets/js/display-items.js"></script>
     <script src="assets/js/modal.js"></script>

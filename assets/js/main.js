@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(displayCurrentDate, 1000); // Atualiza a data e hora a cada segundo
     registerItem(); // Inicializa o registro de itens
     displayItems(listItems); //Renderizar itens cadastrados
+    renderStatistics(); //Renderizar estatísticas de itens
 });
 
 /*-------------------------------------------------------------------------------------------------*/
