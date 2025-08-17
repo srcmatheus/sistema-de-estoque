@@ -35,6 +35,9 @@ function initCarousel(){
     Quando a tecla 'ArrowRight' for pressionada e o indice  atual for menor que o indice do último botão, chama a função que avançará o slide
     O mesmo ocorre com 'ArrowLeft', porém verificando se o indice atual é maior que 0, se for, o slide retrocederá*/
     document.addEventListener('keydown', (e) => {
+        const modal = document.querySelector('.modal-content show');
+        if(modal && modal.classList.contains('show')) e.preventDefault();
+           
         if(e.key === 'ArrowRight' && currentIndex < navButtons.length - 1){
             showSlide(currentIndex + 1)
         } else if(e.key === 'ArrowLeft' && currentIndex > 0){

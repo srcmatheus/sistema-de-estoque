@@ -23,7 +23,7 @@ function editItem(index){ //Função para editar o item
             </select>
             </div>
             <div class="width-50">
-                <label for="product-quantity">Quantidade</label><input type="number" name="product-quantity" id="product-quantity1" min="1" required value="${productIndex.productQuantity}">
+                <label for="product-quantity">Quantidade</label><input type="number" name="product-quantity" id="product-quantity1" min="1" max="9999" required value="${productIndex.productQuantity}">
             </div>
 
             <div class="width-50">
@@ -49,8 +49,8 @@ function editItem(index){ //Função para editar o item
                     const productName = document.getElementById('product-name1').value.toLowerCase();
                     const productCode = document.getElementById('product-code1').value;
                     const productClass = document.getElementById('product-classification1').value;
-                    const productQuantity = document.getElementById('product-quantity1').value;
-                    const productPrice = document.getElementById('product-price1').value;
+                    const productQuantity = parseInt(document.getElementById('product-quantity1').value);
+                    const productPrice = parseFloat(document.getElementById('product-price1').value);
 
                     listItems[index] = {
                         productName,
