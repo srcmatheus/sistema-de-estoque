@@ -1,6 +1,6 @@
 /*Função de registo de dados do formulário*/
 
-let listItems = []; // Lista para armazenar os itens registrados
+let listItems = recoverData(); // Lista para armazenar os itens registrados
 
 function registerItem() {
 
@@ -34,7 +34,7 @@ function registerItem() {
 
         displayItems(listItems);
         renderStatistics();
-
+        saveData();
     })
 
 }

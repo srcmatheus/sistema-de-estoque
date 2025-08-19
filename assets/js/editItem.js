@@ -64,6 +64,7 @@ function editItem(index){ //Função para editar o item
 
                     displayItems(listItems);
                     renderStatistics();
+                    saveData();
                     showNotificationBox('Item Salvo com sucesso!');
                 }
             }
@@ -89,6 +90,7 @@ function deleteItem(index){
                     displayItems(listItems);
                     renderStatistics();
                     modal.closeThis();
+                    saveData();
                     showNotificationBox('Item excluído com sucesso.', 3000, 'red');
                 }
             }
